@@ -1,4 +1,3 @@
 site_name: My Docs
 site_dir: target/site/docs/intdocs
 docs_dir: src/main/docs
-theme: Read the Docs
