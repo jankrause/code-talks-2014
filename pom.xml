@@ -75,7 +75,7 @@
 						${project.artifactId}:${project.version}</checkinComment>
 					<content>${project.reporting.outputDirectory}/docs/apidocs</content>
 					<skipDeletedFiles>true</skipDeletedFiles>
-					<pubScmUrl>scm:git:jankrause@github.com:jankrause/code-talks-2014.git</pubScmUrl>
+					<pubScmUrl>scm:git:git@github.com:jankrause/code-talks-2014.git</pubScmUrl>
 					<scmBranch>gh-pages</scmBranch> <!-- branch with static site -->
 				</configuration>
 			</plugin>
