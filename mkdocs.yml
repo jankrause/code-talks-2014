@@ -1,3 +1,9 @@
-site_name: My Docs
-site_dir: target/site/docs/intdocs
+site_name: Bookseller Services Systemhandbuch
+site_dir: target/site/docs
 docs_dir: src/main/docs
+pages:
+ - [index.md, Home]
+ - [architecture.md, Architekturhandbuch]
+ - [coding.md, Programmierhandbuch]
+ - [api.md, API-Handbuch]
+ - [glossary.md, Glossar]
