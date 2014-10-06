@@ -1,5 +1,5 @@
 site_name: Bookseller Services Systemhandbuch
-site_dir: target/site/docs
+site_dir: target/site/docs/systemhb
 docs_dir: src/main/docs
 pages:
  - [index.md, Home]

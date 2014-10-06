@@ -13,7 +13,7 @@ API Handbuch
 ## Abhängigkeiten
 
 ## Referenz
-Zu den [Javadocs](../apidocs/index.html)
+Zu den [Javadocs](http://jankrause.github.io/code-talks-2014)
 
 ## Lizenz
 Dieses System ist lizenziert unter [Apache Licence 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).

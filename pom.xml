@@ -76,7 +76,7 @@
 					<content>${project.reporting.outputDirectory}/docs/apidocs</content>
 					<skipDeletedFiles>true</skipDeletedFiles>
 					<pubScmUrl>scm:git:git@github.com:jankrause/code-talks-2014.git</pubScmUrl>
-					<scmBranch>gh-pages</scmBranch> <!-- branch with static site -->
+					<scmBranch>gh-pages</scmBranch>
 				</configuration>
 			</plugin>
 		</plugins>
