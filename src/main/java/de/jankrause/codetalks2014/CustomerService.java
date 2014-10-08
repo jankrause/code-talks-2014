@@ -23,13 +23,20 @@ public interface CustomerService {
 	 * 
 	 * @throws SystemException If one of the following conditions is met:
 	 * 
-	 * | Code | Condition, which causes the exception111                             | 
+	 * |Code  |Condition, which causes the exception111                              | 
 	 * |:-----|:---------------------------------------------------------------------| 
      * | 01   | If given order is null.                                              |
      * | 02   | If the volume providing the template-files is not available.         |
      * | 12   | If the given customer or his or her mail-address is null or invalid. |
      * | 17   | If the configured SMTP-Server is not available.                      |
      * | 18   | If the template rejection.tpl is not available.                      |  
+	 * 
+	 * ABC       DEF
+	 * =======   ===================
+ 	 * sd        ssss
+	 * sdsd      ssfsf
+	 * -------   -------------------
+	 *
 	 */
 	public void sendOrderRejection(Order order) throws SystemException;
 	
