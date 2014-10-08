@@ -28,7 +28,7 @@ public class StringUtils {
 	 * @doc.test
 	 * 	The character 'l' occurs three times in 'Hallo Welt'.
 	 * 	js> StringUtils.countChars("Hallo Welt",'l')
-	 * 	3
+	 * 	34
 	 * 
 	 * @doc.test
 	 * 	The string whereToCount must not be null.
