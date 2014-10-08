@@ -45,15 +45,23 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9</version>
+				<version>2.10.1</version>
 				<configuration>
 					<doclet>ch.raffael.doclets.pegdown.PegdownDoclet</doclet>
 					<reportOutputDirectory>${project.reporting.outputDirectory}/docs/apidocs</reportOutputDirectory>
+					<tagletpath>doclibs/jdoctest-1.6.jar:doclibs/js.jar</tagletpath>
+					<taglet>net.cscott.jdoctest.JDoctest</taglet>
+					<tagletArtifact>
+						<groupId>net.cscott.jdoctest</groupId>
+						<artifactId>net.cscott.jdoctest.JDoctest</artifactId>
+						<version>1.6</version>
+					</tagletArtifact>
 					<docletArtifact>
 						<groupId>ch.raffael.pegdown-doclet</groupId>
 						<artifactId>pegdown-doclet</artifactId>
 						<version>1.1.1</version>
 					</docletArtifact>
+					<additionalJOption>-J-ea</additionalJOption>
 					<useStandardDocletOptions>true</useStandardDocletOptions>
 				</configuration>
 				<executions>
@@ -78,6 +86,14 @@
 					<pubScmUrl>scm:git:git@github.com:jankrause/code-talks-2014.git</pubScmUrl>
 					<scmBranch>gh-pages</scmBranch>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>publish-scm</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

@@ -1,30 +1,13 @@
 package de.jankrause.codetalks2014;
 
-import java.util.List;
-
 import de.jankrause.codetalks2014.entities.Customer;
 import de.jankrause.codetalks2014.entities.Order;
-import de.jankrause.codetalks2014.exceptions.BooksellerException;
-import de.jankrause.codetalks2014.exceptions.SystemNotAvailableException;
+import de.jankrause.codetalks2014.exceptions.SystemException;
 
 /**
- * |   |   |   |   |   |
- * |---|---|---|---|---|
- * |   |   |   |   |   |
- * |   |   |   |   |   |
- * |   |   |   |   |   |
+ * Provides methods to find, change or contact one or more {@link Customer}s.
  */
 public interface CustomerService {
-
-	public List<Customer> findCustomersByName(String lastname)
-			throws SystemNotAvailableException;
-
-	public Customer findCustomerById(int id) throws SystemNotAvailableException;
-
-	public int createCustomer(Customer newCustomer)
-			throws SystemNotAvailableException;
-
-	public double computeCustomersDiscount(Customer customer);
 	
 	/**
 	 * Rejects the given order by e-mail. The e-mail is send to the mail-address of the order's 
@@ -38,7 +21,7 @@ public interface CustomerService {
 	 * @param order What is rejected. Must not be null and contain a valid {@link Customer}  
 	 * 	with a valid mail-address.
 	 * 
-	 * @throws BooksellerException If one of the following conditions is met:
+	 * @throws SystemException If one of the following conditions is met:
 	 * 
 	 * | Code | Condition, which causes the exception                                | 
 	 * | -----| ---------------------------------------------------------------------| 
@@ -48,6 +31,6 @@ public interface CustomerService {
      * | 17   | If the configured SMTP-Server is not available.                      |
      * | 18   | If the template rejection.tpl is not available.                      |  
 	 */
-	public void sendOrderRejection(Order order) throws BooksellerException;
+	public void sendOrderRejection(Order order) throws SystemException;
 	
 }
