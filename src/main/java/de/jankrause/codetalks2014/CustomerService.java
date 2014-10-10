@@ -13,7 +13,7 @@ public interface CustomerService {
 	 * Accepts the given order by e-mail. The e-mail is send to the mail-address
 	 * of the order's {@link Customer} by using the configured SMTP-Server
 	 * 
-	 * <h3>Requirements:</h3>
+	 * <b>Requirements:</b>
 	 * 
 	 * <ul>
 	 * 	<li>The SMTP-server is configured in config-file <b>systems.properties</b>.</li>
